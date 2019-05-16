@@ -1,42 +1,71 @@
 * {
     box-sizing: border-box;
-  }
+}
   
-  body {
-    font-family: "Open Sans",
-    sans-serif; 
+body {
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
-    color: #444;
+    color: rgb(59, 75, 90);
     text-align: center;
     line-height: 1.5;
-  }
+}
   
-  nav,
-  footer {
+nav,
+footer {
     padding: 1% 0;
-    background-color: rgb(99, 113, 128);
-  }
+    background-color: rgb(59, 75, 90);
+}
   
-  nav {
+nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-  }
+    color: rgb(160, 182, 204);
+}
   
+h1 {
+      line-height: 1.25;
+}
   
+header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#Hero {
+    filter: grayscale(100%);
+    max-height: 400px;
+    max-width: 300px;
+}
   
-  header {
-    padding: 12% 0;
-  }
-  
-  section {
+section {
     min-height: 200px;
     padding: 6% 0;
-    background-color: slategrey;
-  }
+    background-color: rgb(59, 75, 90);
+    color:rgb(160, 182, 204);
+}
   
-  section:nth-child(even) {
+section:nth-child(even) {
     background-color: rgb(160, 182, 204);
-  }
+    color: rgb(76, 87, 99);
+}
+
+p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.contrast-1 {
+    color: rgb(221, 221, 141);
+}
+
+.contrast-2 {
+    color: rgb(248, 248, 133);
+}
