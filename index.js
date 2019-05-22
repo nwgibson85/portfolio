@@ -50,14 +50,14 @@ function handleWorkClick() {
 }
 
 function handleAboutMeClick() {
-    $('.navButtons').on('click', '#Work', function(event) {
+    $('.navButtons').on('click', '#aboutMe', function(event) {
         event.preventDefault();
         displayContactMe();
     });
 }
 
 function handleResumeClick() {
-    $('').on('click', '#Work', function(event) {
+    $('').on('click', '#resume', function(event) {
         event.preventDefault();
     });
 }
