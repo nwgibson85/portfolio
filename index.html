@@ -9,30 +9,44 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Orbitron" rel="stylesheet">
   </head>
   <body>
-    <nav role="navigation">Nav</nav>
+    <nav role="navigation">
+        <ul class='navButtons'>
+            <li><button id='Nick' type="button">Nicholas Gibson</button></li>
+            <li><button id='Work' type="button">My Work</button></li>
+            <li><button id='aboutMe' type="button">Contact Info</button></li>
+        </ul>
+    </nav>
     <main>
-      <header role='banner'>
+      <header role='banner' id='super'>
         <img id='Hero' src='https://i.imgur.com/SjSPCki.jpg'>
         <h1>Hello there, my name is Nicholas.  I am a full stack developer, and a critical care registered nurse.</h1>
       </header>
-      <section>
+      <section id='bio'>
           <h2>Nicholas Gibson</h2>
         <p> 
           As a RN I have run codes to save lives for years, and now I write code for quality of life improvements as well.  I am incredibly passionate the medical professions, worker’s rights, climate change, and how technology can be used to make improvements in these fields.  While continuing to work full time I have recently completed the fullstack flex bootcamp program through Thinkful.  Hard earned experience from nursing including:  attention to detail, time management, continued education, and the ability to go 12 hours without a bathroom break (ok maybe not that one) feed directly into web development.  When I am not writing code or running codes I love to spend time with the family. I am a father of four children five years and under.  Time away from work is chaos and I love it.</p>
       </section>
-      <section>
-        <h2>My work</h2>
-        <p>wow such empty</p>
-        <h3 class='contrast-1'>Contrast example1</h3>
+      <section id='myWork'>
+        <ul id='projectWheel'>
+          <li><img src='https://i.imgur.com/fH9B472.png' alt="thumbnail of a quiz app" /></li>
+        </ul>
       </section>
-      <section>
-        <h2>About me</h2>
-        <p>much selling points, such hire ability, wow</p>
-        <h3 class='contrast-2'>Contrast example2</h3>
+      <section id='contactMe'>
+        <form>
+          <p></p>
+          <fieldset>
+            <legend><h3>Contact me at your convenience</h3></legend>
+              <label>
+                <ul>
+                  <li><button id='linkedIn' type='button' ><img src=''></button></li>
+                  <li>Github</li>
+                  <li>gmail</li>
+                </ul>
+              </label>
+          </fieldset>
+        </form>
       </section>
-      <section>
-        <h2>RN resume</h2>
-        <p>wow such work, much great experience, oodles of interdisciplinary cooperation.</p> 
+      <section id='resume'>
       </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
