@@ -1,208 +1,400 @@
-* {
-    box-sizing: border-box;
-}
-  
+/* light yellow rgb(248, 248, 133)
+gold #ffd700;
+metalic gold #D4AF37
+lighter metalic yellow #FDE082 */
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    color: rgb(59, 75, 90);
-    text-align: center;
-    line-height: 1.5;
-    margin-top: 15px;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0px;
-}
-  
-nav {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(59, 75, 90);
-}
-
-.navButton {
-    margin-bottom: 3px;
-}
-
-ul {
-    margin-top: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  h1, h2, h3, legend {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 15px;
+  }
+  
+  h2 {
+    margin-top: 0px;
+  }
+  
+  legend {
+    font-size: 24px;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  .lightBlue {
+    color: rgb(160, 182, 204);
+  }
+  
+  /* Navigation Styling */
+  .navButtons {
+    overflow: hidden;
+    background-color: rgb(160, 182, 204)
+  }
+  
+  .navButtons a {
+    float: left;
+    display: block;
+    color: rgb(160, 182, 204);
+    background-color: rgb(59, 75, 90);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navButtons a:hover {
+    background-color: #FDE082;
+    color: black;
+  }
+  
+  .navButtons .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navButtons a:not(:first-child) {display: none;}
+    .navButtons a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navButtons.responsive {position: relative;}
+    .navButtons.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navButtons.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  /* Bio styling */
+  #hello {
+      line-height: 1.25;
+      margin-right: 8px;
+      margin-left: 8px;
+      width: 90vw;
+  }
+  
+  #super {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(160, 182, 204);
+      align-items: center;
+      color: rgb(59, 75, 90);
+  }
+  
+  #Hero {
+    filter: grayscale(100%);
+    height: 75%;
+    width: 75%;
+    float: right;
+    margin-left: -80px;
     margin-bottom: 0;
+    margin-right: 0;
+    margin-top: -30px;
+  }
+  
+  #bio {
+    height: 50vh;
+    width: 100vw;
+    /* background-image: url('https://i.imgur.com/zUggN9w.png');
+    background-repeat: no-repeat;
+    background-position: right; */
+  }
+  
+  #myName {
+    color: rgb(160, 182, 204);
+  }
+  
+  #intro {
+    color: rgb(160, 182, 204);
+    width: 90vw;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 24px;
+  }
+  
+  /* Projects Styling */
+  #carouselBox {
+    background-color: rgb(160, 182, 204);
+    color: rgb(59, 75, 90);
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    list-style-type: none;
-}
-
-li {
-    margin-right: 20px;
-}
+    align-items: center;
+    margin-block-start: 0em;
+  }
   
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+  #projectPreview {
     color: rgb(160, 182, 204);
-}
-  
-h1 {
-    line-height: 1.25;
-    margin-top: 45px;
-}
-  
-header {
-    margin-top: 30px;
+    width: 100vw; 
     display: flex;
     flex-direction: row;
-}
-
-#Hero {
-    filter: grayscale(100%);
-    max-width: 300px;
-    max-height: 400px;
-}
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
   
-section {
-    min-height: 200px;
-    padding: 2% 0;
-    background-color: rgb(59, 75, 90);
-    color:rgb(160, 182, 204);
-}
+  .mainView {
+    margin-bottom: 10px;
+  }
   
-section:nth-child(even) {
-    background-color: rgb(160, 182, 204);
-    color: rgb(76, 87, 99);
-}
-
-p {
+  .mainView img {
+    height: 100%
+  }
+  
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .thumbnail {
+    display: inline-block;
+    cursor: pointer;
+    height: 60px;
+    margin-bottom: 8px;
+  }
+  
+  a.thumbnail:hover {
+    box-shadow: 8px 8px 8px #FDE082;
+  }
+  
+  .thumbnail img {
+    max-height: 100%;
+  }
+  
+  #description {
+    font-size: 20px;
+    width: 90vw;
     text-align: left;
-    margin-left: 10px;
-}
-
-h1, h2, h3 {
-    font-family: 'Orbitron', sans-serif;
-}
-
-.contrast-1 {
-    color: rgb(221, 221, 141);
-}
-
-.contrast-2 {
-    color: rgb(248, 248, 133);
-}
-
-button {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  
+  #techsUsed {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    padding-inline-start: 0px;
+  }
+  
+  .projectButton {
+    background-color: rgb(160, 182, 204);
+    color: rgb(59, 75, 90);
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .projectButton:hover {
+    background-color: #FDE082;
+  }
+  
+  #projectView {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* contactMe styling */
+  button {
     border: none;
-    text-transform: uppercase;
-    border-radius: 0;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: rgb(59, 75, 90);
+    border-radius: 22.5px;
+  }
+  
+  #gitHub,
+  #linkedIn,
+  #gmail {
+    padding: 15px;
+    border-radius: 22.5px;
+    background-color: rgb(160, 182, 204);
+  }
+  
+  #gitHub:hover,
+  #linkedIn:hover, 
+  #gmail:hover {
+    background-color: #FDE082;
+  }
+  
+  #top {
+    height: 50vh;
+    width: 100vw; 
+    background-color: rgb(160, 182, 204);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(59, 75, 90);
+
+  }
+  
+  label {
+    background-color: rgb(160, 182, 204);
+  }
+  
+  /* .circle {
+    color: rgb(160, 182, 204);
+    height: 90vh;
+    width: 60vw; 
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background: rgb(59, 75, 90);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  } */
+  
+  .text-box {
+    color: rgb(160, 182, 204);
+    list-style-type: none;
+    border: none;
+    text-align: center;
+  }
+  
+  #contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    list-style-type: none;
+    align-items: center;
+    height: 50vh;
+    padding-inline-start: 0px;
+  }
+  }
+  
+  #contact-box {
+    border: none;
+    height: 33vh;
+    background-color: rgb(160, 182, 204);
+  }
+  
+  #why {
+    background-color: #FDE082;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #text {
+    width: 95vw;
+    margin-left: 15px;
+    color:  rgb(59, 75, 90);
+    font-size: 24px; 
+    line-height: 1.5;
+  }
+  
+  #call-to-action {
+    background-color: #FDE082;
+    text-align: center;
+    color: rgb(59, 75, 90);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .contactButton {
+    margin-top: 10px;
+  }
+  
+  /* resume styling */
+  #resume {
+    width: 100vw;
+    padding-bottom: 20px;
+  }
+  
+  .resumeScript-even {
+    color: rgb(160, 182, 204);
+    width: 90vw;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background-color: rgb(59, 75, 90);
+  }
+  
+  #contact_forward,
+  #workXP1 {
     color: rgb(59, 75, 90);
     background-color: rgb(160, 182, 204);
-    margin: auto;
-    margin-top: 0;
-    font-size: 16px;
-    border-radius: 25px;
-    padding: 5px;
-    margin-right: 40px;
-}
-
-button:hover {
-    background-color: rgb(248, 248, 133);
-}
-
-/*Contact Info specifics*/
-.contactButton {
-
-} 
-
-#contact-box {
-    border-right: none;
-    border-left: none;
-    border-bottom: none;
-    border-top: dashed, rgb(221, 221, 141);
-}
-
-#linkedIn,
-#gitHub,
-#gmail {
-    padding: 10px;
-}
-
-/*
-@import "compass/css3";
-
-@mixin on-circle($item-count, $circle-size, $item-size) {  
-    position: relative;
-    width:  $circle-size;
-    height: $circle-size;
-    border-radius: 50%;
-    padding: 0; 
-    list-style: none;
-    
-    > * {
-      display: block;
-      position: absolute;
-      top:  50%; 
-      left: 50%;
-      margin: -($item-size / 2);
-      width:  $item-size;
-      height: $item-size;
-    
-      $angle: (360 / $item-count);
-      $rot: 0;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    width: 100vw;
+  }
   
-      @for $i from 1 through $item-count {
-        &:nth-of-type(#{$i}) {
-          transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
-        }
+  .resumeScript-odd {
+    color: rgb(59, 75, 90);
+    background-color: rgb(160, 182, 204);
+    width: 90vw;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
   
-        $rot: $rot + $angle;
-      }
+  .legend-even {
+    color: rgb(59, 75, 90);
+    background-color: #FDE082;
+  }
+  
+  .legend-odd {
+    color: rgb(59, 75, 90);
+    background-color: #FDE082;
+  }
+  
+  .tasks {
+    width: 90vw;
+    margin-left: 0;
+    font-size: 18px;
+    list-style-type: 
+  }
+  
+  @media only screen and (max-width: 595px) {
+    fieldset {     
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-block-start: 0em;
+      padding-inline-start: 0em;
+      padding-inline-end: 0em;
+      padding-block-end: 0em;
+    }
+  
+    .resumeScript-odd,
+    .resumeScrip-even {
+      margin-left: 10px;
+    }
+  
+    .tasks {
+      padding-inline-start: 10px;
+    }
+  
+    .placeOfWork {
+      margin-left: 10px;
+    }
+
+    #top {
+        height: 100%;
     }
   }
-
-#projectsWheel {
-    @include on-circle($item-count: 1, $circle-size: 20em, $item-size: 6em); 
-    margin: 5em auto 0;
-    border: solid 5px rgb(59, 75, 90);
-    
-    img { 
-      display: block; 
-      max-width: 100%; 
-      border-radius: 50%;
-      filter: grayscale(100%);
-      border: solid 5px rgb(59, 75, 90);
-      transition: .15s;
-      
-      &:hover,
-      &:active {
-        filter: grayscale(0);
-      }
-    }
-}*/
-@media only screen and (max-width: 595px) {
-    body {
-        margin-top: 30px;
-    }
-}
-@media only screen and (max-width: 420px) {
-    #Hero {
-        max-width: 100%;
-        text-align: center;
-        margin: auto;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    h1 {
-        margin-top: 20px;
-    }
-
-    #contact-list {
-        margin-left: 0px;
-    }
-}

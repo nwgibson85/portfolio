@@ -1,56 +1,114 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio wireframe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="main.css" rel="stylesheet" type="text/css"/> 
-    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Orbitron" rel="stylesheet">
-  </head>
-  <body>
-    <nav role="navigation">
-        <ul class='navButtons'>
-            <li><button id='Nick' class='navButton' type="button">Nicholas Gibson</button></li>
-            <li><button id='Work' class='navButton' type="button">My Work</button></li>
-            <li><button id='aboutMe' class='navButton' type="button">Contact Info</button></li>
-        </ul>
-    </nav>
-    <main>
-      <header role='banner' id='super'>
-        <img id='Hero' src='https://i.imgur.com/SjSPCki.jpg'>
-        <h1>Hello there, my name is Nicholas.  I am a full stack developer, and a critical care registered nurse.</h1>
+<head><title>Nicholas Gibson's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato|Orbitron" rel="stylesheet">
+<link href="main.css" rel="stylesheet" type="text/css"/> 
+</head>
+<body>
+  <nav class="navButtons" id="myNav">
+    <a href="#Bio" id='Nick' class="navButton">Home</a>
+    <a href="#Projects" id='Work' class="navButton">Projects</a>
+    <a href="#Contact-Info" id='aboutMe' class="navButton">Contact Info</a>
+    <a href="#resume" id='rnResume' class="navButton">Nursing Resume</a>
+    <a href="javascript:void(0);" id='navBurger' class="icon navButton">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+  <main>
+    <header id='super'>
+         <h1 id='hello'>Hello there, my name is Nicholas.  I am a<img id='Hero' src="https://i.imgur.com/HOX2Beo.png" alt='headshot of Nicholas Gibson laughing'> full stack developer, and a critical care registered nurse.</h1> 
       </header>
-      <section id='bio'>
-          <h2>Nicholas Gibson</h2>
-        <p> 
-          As a RN I have run codes to save lives for years, and now I write code for quality of life improvements as well.  I am incredibly passionate the medical professions, worker’s rights, climate change, and how technology can be used to make improvements in these fields.  While continuing to work full time I have recently completed the fullstack flex bootcamp program through Thinkful.  Hard earned experience from nursing including:  attention to detail, time management, continued education, and the ability to go 12 hours without a bathroom break (ok maybe not that one) feed directly into web development.  When I am not writing code or running codes I love to spend time with the family. I am a father of four children five years and under.  Time away from work is chaos and I love it.</p>
+    <section id='bio'>
+      <h2 id='myName'>Nicholas Gibson</h2>
+        <p id='intro'> 
+          As a RN I have directed and participated in medical codes saving lives for years, and now I write code for quality of life improvements as well.  I am incredibly passionate about the medical professions, health care, climate change, and how technology can be used to make improvements in these fields. I recently completed the fullstack flex bootcamp program through Thinkful.  The skills learned during my years as an RN corelate positively allowing me to excell in software development. Just a few of said skills include:  attention to detail, time management, experience with continued education, and the ability to go 12 hours without a bathroom break (ok maybe not that one).  When I am not writing code or directing medical codes I love to spend time with my family. I am a father of four children five years and under.  Time away from work is chaos and I love it.</p>
+    </section>
+    <section id='myWork'>
+      <section id='carouselBox'>
+        <div class="thumbnails">
+          <a class="thumbnail" id='quizApp' href="#"><img src="https://i.imgur.com/2FxGo5K.png" alt="A sample question from my Quiz App."/></a>
+          <a class="thumbnail" id='IV' href="#"><img src="https://i.imgur.com/cvIRCrS.png" alt="Construction sign, IV Compatibility Optimizer app."/></a>
+          <!-- <a class="thumbnail" id='SBAR' href="#"><img src="https://i.imgur.com/cvIRCrS.png" alt="Under Construction sign, SBAR Report Generator"/></a> -->
+        </div>
+         <fieldset class="mainView"><!--<legend id='projectTitle'>Preview My Projects</legend> -->
+          <img id='projectView' src="https://i.imgur.com/2FxGo5K.png" alt="A sample question from my Quiz App."/>
+        </fieldset>
       </section>
-      <section id='myWork'>
-        <ul id='projectWheel'>
-          <li><img src='https://i.imgur.com/fH9B472.png' alt="thumbnail of a quiz app" /></li>
-        </ul>
+      <section id='projectPreview'>
       </section>
-      <section id='contactMe'>
-        <form>
-          <p>The health care professions are chronically understaffed, and over the past eleven years working as a health care professional I have become well aware of the issue of time management.  I am working on multiple applications that will reduce the amount of time spent charting while increasing patient safety. My goal is to complete these applications and continue to develop applicaions for other such quality of life improvements</p>
-          <fieldset id='contact-box'>
-            <legend><h3>Contact me at your convenience</h3></legend>
-              <label>
-                <ul id='contact-list'>
-                  <li><button class='contactButton' type='button'><img id='linkedIn' src='https://i.imgur.com/0VEl6k5.png'><a href=''></a></button></li>
-                  <li><button class='contactButton' type='button'><img id='gitHub' src='https://i.imgur.com/Rhln4Gh.png'><a href='https://github.com/nwgibson85'></a></button></li>
-                  <li><button class='contactButton' type='button'><img id='gmail' src='https://i.imgur.com/3tnxXqG.png'><a href=''></a></button></li>
-                </ul>
-              </label>
-          </fieldset>
-        </form>
+    </section>
+    <section id='contactMe'>
+      <section id='top'><h2 id='why'>Why would a nurse learn to code?</h2><p id='text'>The issues that I encounter on a daily basis as an RN have empassioned me to learn software develpment. While I am very competent in my own abilities, my experience in life has proven time and again that I can accomplish much more as part of a team. I would love to add my experience and passion to your dev team.</p>
+        <!-- <section class='circle'>
+        </section> -->
       </section>
-      <section id='resume'>
-      </section>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="storage.js"></script>
-    <script src="index.js"></script>
-  </body>
+      <fieldset class='text-box'><legend id='call-to-action'>Please contact me through any of the following links</legend>
+        <section>
+            <ul id='contact-list'>
+              <li><button class='contactButton'  type='button' onclick="window.location.href = 'https://www.linkedin.com/feed/';"><img id='linkedIn' src='https://i.imgur.com/hPiCpXU.png' alt='linkedin logo'></button></li>
+              <li><button class='contactButton' type='button' onclick="window.location.href = 'https://github.com/nwgibson85';"><img id='gitHub' src='https://i.imgur.com/Rhln4Gh.png' alt='github logo'></button></li>
+              <li><button class='contactButton' type='button' onclick="location.href='mailto:nwgibson85@gail.com';"><img id='gmail' src='https://i.imgur.com/X1xHjDu.png' alt='email logo'></button></li>
+            </ul>
+          </section>
+      </fieldset>
+    </section>
+    <section id='resume'>
+      <fieldset id='contact_forward'><legend class='legend-odd'>NICHOLAS GIBSON</legend>
+        <p class='resumeScript-odd'>Highly motivated, organized, ambitious, and goal-oriented Registered Nurse seeking opportunity for continued
+        growth. With proven success in: leadership, interdisciplinary cooperation, and mastery of nursing skills</p>
+      </fieldset>
+      <fieldset id='education'><legend class='legend-even'>EDUCATION</legend>
+        <p class='resumeScript-even'>ADN Program: January 2012 - December 2013  
+        Parkland College, Champaign, Illinois</p>
+        <p class='resumeScript-even'>
+        General Studies: August 2010 - December 2011  
+        Parkland College, Champaign, Illinois</p>
+        <p class='resumeScript-even'>										 
+        General Studies: August 2004 - May 2006  
+        DePauw University, Greencastle, Indiana</p></fieldset>
+      <fieldset id='workXP1'><legend class='legend-odd'>WORK EXPERIENCE</legend>
+        <p class='resumeScript-odd'>
+          <h3 class='placeOfWork'>
+          Carle Foundation Hospital: Critical Care Unit Urbana, Illinois.   
+          October 2016 - Present</h3>
+          <ul class='tasks'>
+            <li>Managed the Critical Care Unit as Unit leader (charge nurse equivalent), developed staff assignments, provided an avenue for communication between floor staff and management, mediated conflicts between floor staff members.</li> 
+            <li>Provide excellent care for a wide patient population including: PICU, SICU,Trauma ICU, and Neuro ICU.</li>
+            <li>Demonstrate proficiency in the following nursing skills: IV start and care,dressing changes, central line
+            dressing changes and care, sterile gloving, catheter placement, primary and secondary IV line starts and
+            management, OG/NG placement, EVD management, Chest tube management, and ICP/CVP/IAP assessment</li>
+            <li>Coordination and cooperation with Gift of Hope for Organ donation.</li>
+            <li>Administer medications, IV, Sub Q, IM, PO, Rectal, Transdermal, and Enteral.</li>
+          </ul>
+        <p class='resumeScript-odd'>  
+          <h3 class='placeOfWork'>Carteret Health Care: Medical Surgical, and Progressive Care units Morehead City, North Carolina  
+          April 2015 - October 2016</h3>
+          <ul class='tasks'>
+            <li>Effectively communicates to all care staff in the interdisciplinary team including: CNA, RN, APN, MD, PT, OT, ST, RT, and all non-direct patient care staff</li>
+            <li>Developed critical thinking for acutely ill patients.</li>
+            <li>Acquired experience from veteran RNs as well as from my own experiences.</li>  
+            <li>Patient population included medical, surgical, stepdown, observation, trauma, sepsis, stroke, and many more.</li>
+          </ul>
+        <p class='resumeScript-odd'>
+          <h3 class='placeOfWork'>Clark Lindsey Village Renewal Therapy Unit (sub-acute therapy unit) Urbana, Illinois  
+          March 2014 - March 2015</h3>
+          <ul class='tasks'>
+            <li>Founder and leader of the Evidence Based Practice Committee, a team committed to implementing evidence based practice into the daily care of the patients at CLV.</li>
+            <li> Promoted to the Green Team, a committee dedicated to lowering the carbon footprint of Clark Lindsey Village.</li>
+            <li>Successfully manage the daily care of all patients on a 12:1 patient to nurse sub-acute unit.</li>
+            <li>Develop nursing care plans for all patients.</li>
+          </ul></fieldset>
+      <fieldset id='misc'><legend class='legend-even'>QUALIFICATIONS , CERTIFICATIONS AND MEMBERSHIPS</legend>
+          <p class='resumeScript-even'>Passed the NCLEX exam on 02/13/14, 
+             State of Illinois License No. 041.418493  
+             BLS, ACLS, PALS certifications</p> 
+      </fieldset>
+    </section>
+  </main>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="storage.js"></script>
+<script src="index.js"></script>
+</body>
 </html>
