@@ -16,21 +16,40 @@ function displayProPreview() {
   );
 }
 
+function handleContactInfoClicks() {
+    $(document).on("click", "i", function(){
+        switch (this.id) {
+            case "linkedIn":
+                console.log('Handled linkedin Click');
+                window.location.href="https://www.linkedin.com/feed/";
+                break;
+            case "gitHub":
+                console.log('Handled github Click');
+                window.location.href="https://github.com/nwgibson85";
+                break;
+            case "gmail":
+                console.log('Handled gmail Click');
+                location.href='mailto:nwgibson85@gail.com';
+                break;
+        }
+    });
+}
+
 function handleThumbnailClicks() {
   $('#carouselBox').on('click', '.thumbnail', function(event) {
-     const imgSrc = $(this).find('img').attr('src');  
-     const imgAlt = $(this).find('img').attr('alt');
+        const imgSrc = $(this).find('img').attr('src');  
+        const imgAlt = $(this).find('img').attr('alt');
     
-    $('.mainView img').attr('src', imgSrc).attr('alt', imgAlt);
+        $('.mainView img').attr('src', imgSrc).attr('alt', imgAlt);
   });
 }
 
 function responsiveNav() {
   var x = document.getElementById("myNav");
   if (x.className === "navButtons") {
-    x.className += " responsive";
+        x.className += " responsive";
   } else {
-    x.className = "navButtons";
+        x.className = "navButtons";
   }
 }
 
@@ -70,15 +89,15 @@ function displayResume() {
 // event handlers
 function reactiveN0() {
   $('#quizApp').on('click', function(event) {
-    n = 0;
-    displayProPreview();
+        n = 0;
+        displayProPreview();
   });
 }
 
 function reactiveN1() {
   $('#IV').on('click', function(event) {
-    n = 1;
-    displayProPreview();
+        n = 1;
+        displayProPreview();
   });
 }
 
@@ -125,15 +144,17 @@ function handleResumeClick() {
 }
 
 function callEventHandlers() {
-  handleNavBurgerClick();
-  handleNickClick();
-  handleWorkClick();
-  handleAboutMeClick();
-  handleResumeClick();
-  displayBio();
-  handleThumbnailClicks();
-  reactiveN0();
-  reactiveN1();
+    handleNavBurgerClick();
+    handleNickClick();
+    handleWorkClick();
+    handleAboutMeClick();
+    handleResumeClick();
+    handleContactInfoClicks()
+    displayBio();
+    displayProPreview();
+    handleThumbnailClicks();
+    reactiveN0();
+    reactiveN1();
   
 }
 
