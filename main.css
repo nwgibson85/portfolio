@@ -21,6 +21,7 @@ h2 {
   
 legend {
     font-size: 24px;
+    font-weight: bold;
 }
   
 fieldset {
@@ -46,6 +47,8 @@ fieldset {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
   
 .navButtons a:hover {
@@ -119,6 +122,7 @@ fieldset {
   
 #myName {
     color: rgb(160, 182, 204);
+    margin-left: 15px;
 }
   
 #intro {
@@ -234,6 +238,8 @@ a.thumbnail:hover {
     background-color: rgb(160, 182, 204);
     height: 100%;
     width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
   
 #gitHub:hover,
@@ -360,13 +366,12 @@ label {
 }
   
 .legend-even {
-    color: rgb(59, 75, 90);
-    background-color: #FDE082;
+    color: rgb(160, 182, 204);
 }
   
 .legend-odd {
     color: rgb(59, 75, 90);
-    background-color: #FDE082;
+    margin-right: 0px;
 }
   
 .tasks {
@@ -416,17 +421,45 @@ label {
     #hero {
         height: 50%;
         width: 60%;
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #super {
+        height: 80vh;
+    }
+
+    #Hero {
+        height: 60%;
+        width: 80%;
+    }
+
+    #hello {
+        width: 90vw;
     }
 }
 
 @media only screen and (max-width: 414px) {
     #super {
-        height: 81vh;
+        height: 82vh;
+    }
+
+    #Hero {
+        margin-top: -55px;
+    }
+
+}
+
+@media only screen and (max-width: 408px) {
+    #super {
+        height: 90vh;
     }
 
     #Hero {
         height: 60%;
-        width: 75%;
+        width: 80%;
+        margin-top: -50px;
     }
 
     #hello {
@@ -436,11 +469,13 @@ label {
 
 @media only screen and (max-width: 340px) {
     #super {
-        height: 90vh;
+        height: 100vh;
     }
 
     #Hero {
-
+        margin-top: -50px;
+        height: 55%;
+        width: 80%;
     }
 
     #hello {
