@@ -12,7 +12,7 @@ body {
   
 h1, h2, h3, legend {
     font-family: 'Orbitron', sans-serif;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
   
 h2 {
@@ -81,7 +81,7 @@ fieldset {
   
 /* Bio styling */
 #hello {
-    line-height: 1.25;
+    line-height: 1.5;
     margin-right: 8px;
     margin-left: 25px;
     width: 80vw;
@@ -401,5 +401,49 @@ label {
 
     #top {
         height: 100%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    #super {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        height: 75vh;
+    }
+
+    #hero {
+        height: 50%;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #super {
+        height: 81vh;
+    }
+
+    #Hero {
+        height: 60%;
+        width: 75%;
+    }
+
+    #hello {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    #super {
+        height: 90vh;
+    }
+
+    #Hero {
+
+    }
+
+    #hello {
+        width: 95vw;
     }
 }
